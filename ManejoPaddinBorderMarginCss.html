@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+            color: blue;
+        }
+        p{
+            color:white;/*Color para el texto*/
+            background-color: red;/*color de fondo*/
+            padding: 15px;/*Espacio entre el contenido y el borde*/
+            border: 10px solid powderblue;/*Espacio entre el padding y el margen*/
+
+            /*Forma de asignar valores individualmente alrededor del 
+             modelo de caja en su margen
+             notese que los valores se asignas en dirección
+             a las manecillas del reloj
+             superior top, derecho right, inferior bottom e izquierdo left
+             margin incrementa el espacio entre objetos o elementos*/
+           /* margin-top: 40px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            */
+
+            /*Otra forma mas sinplificada de uso de margin
+            notese que los valores se asignan en dirección
+             a las manecillas del reloj
+             superior top, derecho right, inferior bottom e izquierdo left*/
+            /* margin: 40px 15px 20px 10px; */
+
+            /*Si especificamos solo dos valores 
+              El 1er valor sera para top y bottom
+              El 2do valor sera para Right y Left 
+            */
+           /* margin: 40px 10px; */
+
+           /*Al usar margin con el valor auto
+           su valor es cero a todo el rededor del margin*/
+           /*margin: auto;*/
+
+           /*Si se usa margin con auto en combinación con 
+           un valor en pixelex, la caja ce centra teniendo valor
+           cero top y bottom y espacio a los lados righ y left
+           especificado por el valor en pixceles.
+           De no darle un valor y el tipo de elemento de la caja
+           es de tipo bloque este se extiende a todo lo ancho de 
+           la pagina. por eso se le da un valor en pixceles
+           para que ese valor lo de de margen right y left y
+           ce centre el elemento*/
+           margin: auto 50px;
+
+           /*Para centrar el texto contenido en el modelo de caja
+           utilizamos text-align: center;*/
+           text-align: center;
+        }
+        
+    </style>
+    <title>Box M odel Css</title>
+    <pre>
+        En esta lección se daran valores individuales
+        a las cuatro valores que rodean el contenido
+        de cada elemento de la pagina, padding, border y margin.
+        ya que si ponemos un solo valor en el padding, border o margin
+        este se asigna en automatico alrededor del elemento.
+    </pre>
+</head>
+<body>
+    <h1>Universidad HTML</h1>
+    <p>Bienvenido a CSS</p>
+    <p>saludos!</p>
+    <a href="contenido.html">Ir a contenido</a>
+</body>
+</html>
